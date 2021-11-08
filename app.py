@@ -224,9 +224,10 @@ def main():
     #Grab some numbers for the carbon intensity over time
     carbon_df = fetch_carbon_intensity_data(t1,t2)
    
+    st.write(carbon_df.drop('intensity.forecast',axis=1))
 
     #Plot it up 
-    plot_line(carbon_df)
+    plot_line(carbon_df.drop('intensity.forecast',axis=1))
 
 
 
