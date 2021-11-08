@@ -178,7 +178,7 @@ def fetch_source_carbon_intensity_numbers():
     return df.sort_values('Carbon Intensity', ascending=False) 
 
 def FAQ():
-    expander = st.expander("FAQ")
+    expander = st.beta_expander("FAQ")
 
     expander.write("**How do you determine the Carbon Intensity numbers?**")
     expander.write("The National Grid ESO, in partnership with the Environmental Defence Fund Europe, the University of Oxford Department of Computer Science and the WWF have provided a very useful API. Please see https://carbonintensity.org.uk")
@@ -251,7 +251,7 @@ def main():
 
     #Grab some example numbers 
     CI_df = fetch_source_carbon_intensity_numbers()
-    expander = st.expander("Appendix")
+    expander = st.beta_expander("Appendix")
     expander.write('The carbon intensity values by fuel source are as follows:')
     expander.write(CI_df)
 
