@@ -3,6 +3,6 @@ channels:
   - defaults
   - conda-forge
 dependencies:
-  - matplotlib=3.4.3=py39hecd8cb5_0
-  - streamlit=1.1.0=pyhd8ed1ab_0
+  - matplotlib=3.4.3
+  - streamlit=1.1.0
 prefix: /Users/tomkimpson/miniconda3/envs/UKCarbonIntensity
