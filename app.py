@@ -193,7 +193,7 @@ def FAQ():
 def main():
 
     #Config
-    st.set_page_config(page_title = 'UK Carbon Intensity',page_icon=":shark:",layout="centered", initial_sidebar_state="expanded")
+    st.set_page_config(page_title = 'UK Carbon Intensity',page_icon=":shark:",layout="centered", initial_sidebar_state="collapsed")
 
 
 
